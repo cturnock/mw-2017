@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document 
+
+/*This changes the way that width works rather than width:400px + padding, margin, etc is 400+ it makes the box 400 total*/ 
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	padding: 0px;
+	list-style-type: none;	
+}
+
+/*Orange Hero Image*/
+.heroImg {
+	background-image: url(imgs/hero.jpg);
+	height: 550px;
+}
+
+header{
+	max-width: 85%;
+	height: 110px;
+	margin: auto;
+	padding-top: 15px;
+	display: block;
+
+}
+/*Navigation*/
+.logo {
+	width: 200px;
+	height: 110px;
+	background-image: url(http://jeremyabrahams.github.io/mw-project-1/img/factory-logo.png);
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	float: left;
+
+}
+
+.navi {
+	float: right;
+	margin-top: 30px;
+}
+
+.nnav {
+	list-style-type: none;
+	display: inline-block;
+	font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 1.125em;
+	text-transform: uppercase;
+	color: white;
+	padding: 20px;
+}
+
+/*Start nav style*/
+.navi ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+.navi ul li a:hover {
+	border-bottom: solid 3px white;
+}
+
+.nvai ul li a:visited {
+	color:white;
+}
+/*End nav style*/
+
+.topSection {
+	margin: auto;
+	margin-top: 110px;
+}
+
+.title {
+	font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 5em;
+	color: white;
+	margin: auto;
+	text-align: center;
+	
+}
+
+/*Wasn't Working with the .sDate class I made */
+.topSection p {
+	font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	font-size: 1.5em;
+	color: white;
+	margin: auto;
+	text-align: center;
+}
+
+
+/*Description*/
+.description {
+	margin: auto;
+	font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	max-width: 70%;;
+	line-height: 60px;
+	text-align: center;
+	color: #d9d9d9;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+/*Course Goals*/
+.courseGoals {
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+	height: 400px;
+}
+.content {
+	width: 33.333%;
+	float: left;
+	padding: 15px;
+}
+
+.courseGoals li:nth-child(3n+1) {
+	clear: both;
+	color: red;
+}
+
+/*CoLearners*/
+.peopleBG {
+	background-color: #EBEBEB;
+}
+
+.colearners {
+	max-width: 900px;
+	margin: auto;
+}
+.people {
+	float: left;
+}
+.circle{
+	border-radius: 100%;
+}
