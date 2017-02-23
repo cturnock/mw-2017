@@ -118,6 +118,7 @@ header{
 	margin: auto;
 	text-align: center;
 	height: 400px;
+	clear: both;
 }
 .content {
 	width: 33.333%;
@@ -131,17 +132,30 @@ header{
 }
 
 /*CoLearners*/
+.colearnersHead{
+	text-align: center;
+	margin: auto;
+}
+
 .peopleBG {
 	background-color: #EBEBEB;
 }
 
 .colearners {
-	max-width: 900px;
+	max-width: 920px;
 	margin: auto;
+	overflow: hidden;
 }
 .people {
 	float: left;
+	padding: 20px 15px;
+	text-align: center;
 }
 .circle{
 	border-radius: 100%;
+	width: 200px;
+}
+
+.cc {
+	margin: auto;
 }
