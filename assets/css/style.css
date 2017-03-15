@@ -1,5 +1,6 @@
 /* CSS Document
 
+
 /*This changes the way that width works rather than width:400px + padding, margin, etc is 400+ it makes the box 400 total*/
 *, *::before, *::after {
   box-sizing: border-box;
@@ -12,7 +13,7 @@ ul {
 
 /*Orange Hero Image*/
 .heroImg {
-  background-image: url(imgs/hero.jpg);
+  background-image: url(../../imgs/hero.jpg);
   height: 550px; }
 
 header {
@@ -26,7 +27,7 @@ header {
 .logo {
   width: 200px;
   height: 110px;
-  background-image: url(imgs/factory-logo.png);
+  background-image: url(../../imgs/factory-logo.png);
   display: block;
   text-indent: 100%;
   white-space: nowrap;
@@ -90,7 +91,7 @@ header {
   max-width: 70%;
   line-height: 60px;
   text-align: center;
-  color: #d9d9d9;
+  color: green;
   padding-top: 100px;
   padding-bottom: 100px; }
 
@@ -156,7 +157,7 @@ header {
 .twitterCo {
   width: 20px;
   height: 20px;
-  background-image: url(imgs/slice.png);
+  background-image: url(../../imgs/slice.png);
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -166,7 +167,7 @@ header {
 .facebookCo {
   width: 20px;
   height: 20px;
-  background-image: url(imgs/slice.png);
+  background-image: url(../../imgs/slice.png);
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -176,7 +177,7 @@ header {
 .dribbleCo {
   width: 20px;
   height: 20px;
-  background-image: url(imgs/slice.png);
+  background-image: url(../../imgs/slice.png);
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -186,7 +187,7 @@ header {
 .linkedinCo {
   width: 20px;
   height: 20px;
-  background-image: url(imgs/slice.png);
+  background-image: url(../../imgs/slice.png);
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -198,6 +199,48 @@ header {
 
 /*Instructor*/
 .instructor {
-  background-image: url(imgs/instructor.jpg);
+  background-image: url(../../imgs/instructor.jpg);
   height: 700px;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right; }
+
+.meetThe {
+  color: white;
+  font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 100;
+  padding: 200px 0 0 200px; }
+
+/*Quote*/
+.quote {
+  height: 626px;
+  margin: auto; }
+
+.adam-quote {
+  color: #E66244;
+  font-size: 3em;
+  font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  max-width: 903px;
+  margin: auto;
+  line-height: 1.3em;
+  padding-top: 170px;
+  text-align: center; }
+
+.adam {
+  color: #AAAAAA;
+  font-size: 1.4em;
+  line-height: 1.1em;
+  font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  padding-top: 74px;
+  text-align: center; }
+
+.grad {
+  color: #AAAAAA;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  text-align: center; }
