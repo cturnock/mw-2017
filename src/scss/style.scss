@@ -1,9 +1,13 @@
 @charset "UTF-8";
+
+//variables//
 $grey: #8d8d8d;
 $orange: #E66244;
 $light-grey: #AAAAAA;
 
+//partials//
 @import "partials/general";
+@import "partials/normalize";
 
 
 //Fixing floated image background//
