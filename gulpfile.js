@@ -7,6 +7,7 @@ var minifycss = require('gulp-minify-css');
 gulp.task('sass', function() {
     return gulp.src('src/scss/style.scss')
         .pipe(sass())
+        .pipe(minifycss())
         .pipe(gulp.dest('assets/css'));
 });
 
