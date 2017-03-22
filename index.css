@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* CSS Document 
+/* CSS Document
 
-/*This changes the way that width works rather than width:400px + padding, margin, etc is 400+ it makes the box 400 total*/ 
+/*This changes the way that width works rather than width:400px + padding, margin, etc is 400+ it makes the box 400 total*/
 *, *::before, *::after {
 	box-sizing: border-box;
 	margin: 0;
@@ -10,7 +10,7 @@
 
 ul {
 	padding: 0px;
-	list-style-type: none;	
+	list-style-type: none;
 }
 
 /*Orange Hero Image*/
@@ -84,7 +84,7 @@ header{
 	color: white;
 	margin: auto;
 	text-align: center;
-	
+
 }
 
 /*Wasn't Working with the .sDate class I made */
@@ -107,7 +107,7 @@ header{
 	max-width: 70%;;
 	line-height: 60px;
 	text-align: center;
-	color: #d9d9d9;
+	color: $light-grey;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
