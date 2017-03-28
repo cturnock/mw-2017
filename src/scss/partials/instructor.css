@@ -1,0 +1,6 @@
+/*Instructor*/
+.instructor {
+	background-image: url(imgs/instructor.jpg);
+	height: 700px;
+	background-size: cover;
+}

@@ -1,0 +1,31 @@
+/*Course Goals*/
+.courseGoals {
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	clear: both;
+	font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 0 0 100px 0;
+}
+
+.courseGoals-header {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.6em;
+}
+.content {
+	width: 33.333%;
+	float: left;
+	padding: 15px;
+	line-height: 1.4em;
+}
+
+.courseGoals li:nth-child(3n+1) {
+	clear: both;
+	color: red;
+}
+
+.courseGoals h2,
+.courseGoals p {
+	font-size: 1em;
+}
