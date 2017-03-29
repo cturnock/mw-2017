@@ -6,12 +6,16 @@
 	clear: both;
 	font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 0 0 100px 0;
+	color:$dark-grey;
 }
 
 .courseGoals-header {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 1.6em;
+	padding-bottom:69px;
+	font-weight: 500;
+	margin: 0;
 }
 .content {
 	width: 33.333%;
@@ -22,6 +26,7 @@
 
 .courseGoals li:nth-child(3n+1) {
 	clear: both;
+	color: $dark-grey;
 }
 
 .courseGoals h2,

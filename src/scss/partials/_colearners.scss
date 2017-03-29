@@ -2,6 +2,9 @@
 .colearnersHead{
 	text-align: center;
 	margin: auto;
+	padding-bottom:70px;
+	text-transform: uppercase;
+	color: $darker-grey;
 }
 
 .peopleBG {
@@ -12,11 +15,20 @@
 	max-width: 920px;
 	margin: auto;
 	overflow: hidden;
+	padding-top:90px;
+	color: $darker-grey;
+	font-size: 1.2em;
+	font-family: 'Roboto', Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
 }
 .people {
 	float: left;
 	padding: 20px 15px;
 	text-align: center;
+}
+
+.people p {
+	padding-top:20px;
 }
 .circle{
 	border-radius: 100%;
