@@ -5,7 +5,7 @@ ul {
 
 /*Orange Hero Image*/
 .heroImg {
-	background-image: url(imgs/hero.jpg);
+	background-image: url(../../imgs/hero.jpg);
 	height: 550px;
 }
 
@@ -21,7 +21,7 @@ header{
 .logo {
 	width: 200px;
 	height: 110px;
-	background-image: url(imgs/factory-logo.png);
+	background-image: url(../../imgs/factory-logo.png);
 	display: block;
 	text-indent: 100%;
 	white-space: nowrap;
@@ -55,6 +55,7 @@ header{
 
 .navi ul li a:hover {
 	border-bottom: solid 3px white;
+	transition: .5;
 }
 
 .nvai ul li a:visited {
@@ -97,14 +98,14 @@ header{
 	max-width: 70%;;
 	line-height: 60px;
 	text-align: center;
-	color: $orange;
+	color: $light-grey;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
 
 /*Graphic*/
 .description::after {
-  content: url(imgs/divider.svg); /*Place holder graphic as something happened to jeremy*/
+  content: url(../../imgs/divider.svg); /*Place holder graphic as something happened to jeremy*/
   width: 100%;
   height: 20px;
 	display: block;

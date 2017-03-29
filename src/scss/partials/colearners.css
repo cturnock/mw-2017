@@ -26,7 +26,7 @@
 .twitterCo {
 	width: 20px;
 	height: 20px;
-	background-image: url(imgs/slice.png);
+	background-image: url(../../imgs/slice.png);
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -37,7 +37,7 @@
 .facebookCo {
 	width: 20px;
 	height: 20px;
-	background-image: url(imgs/slice.png);
+	background-image: url(../../imgs/slice.png);
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -48,7 +48,7 @@
 .dribbleCo {
 	width: 20px;
 	height: 20px;
-	background-image: url(imgs/slice.png);
+	background-image: url(../../imgs/slice.png);
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -58,7 +58,7 @@
 .linkedinCo {
 	width: 20px;
 	height: 20px;
-	background-image: url(imgs/slice.png);
+	background-image: url(../../imgs/slice.png);
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
