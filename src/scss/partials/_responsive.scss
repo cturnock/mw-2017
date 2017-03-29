@@ -1,0 +1,13 @@
+// This is only a test and only works for iphone 6
+
+@media only screen and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation :portrait) {
+  .heroImg {
+    height:1600px;
+  }
+
+  .description {
+    color:blue;
+  }
+}
