@@ -9,6 +9,7 @@ $darker-grey: #444444;
 
 //partials//
 @import "partials/mixins";
+@import "partials/responsive";
 @import "partials/general";
 @import "partials/normalize";
 @import "partials/colearners";
@@ -16,4 +17,3 @@ $darker-grey: #444444;
 @import "partials/header";
 @import "partials/instructor";
 @import "partials/footer";
-@import "partials/responsive";

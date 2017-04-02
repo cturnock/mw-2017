@@ -1,13 +1,18 @@
-// This is only a test and only works for iphone 6
+@media (max-width:900px) {
+.content {
+  width: 50%;
+  clear:none;
+}
 
-@media only screen and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation :portrait) {
-  .heroImg {
-    height:1600px;
-  }
+.courseGoals li:nth-child(2n+1){
+  clear:both;
+}
 
-  .description {
-    color:blue;
-  }
+.courseGoals li:nth-child(3n+1){
+  clear:none;
+}
+
+.courseGoals {
+  max-width: 85%;
+}
 }
