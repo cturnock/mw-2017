@@ -33,3 +33,40 @@
 .courseGoals p {
 	font-size: 1em;
 }
+
+@media (max-width:900px) {
+
+	.courseGoals {
+		max-width: 85%;
+	}
+	.courseGoals li:nth-child(3n+1) {
+		clear: none;
+		color: $dark-grey;
+	}
+
+	.courseGoals li:nth-child(2n+1) {
+		clear: both;
+	}
+
+.content {
+	width: 50%;
+}
+
+}
+
+
+@media (max-width:600px) {
+
+	.courseGoals {
+		max-width: 80%;
+	}
+
+	.courseGoals li:nth-child(1n+1) {
+		clear: both;
+	}
+
+.content {
+	width: 100%;
+}
+
+}

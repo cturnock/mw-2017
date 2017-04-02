@@ -1,18 +1,6 @@
-@media (max-width:900px) {
-.content {
-  width: 50%;
-  clear:none;
-}
+@media (min-width:500px) {
 
-.courseGoals li:nth-child(2n+1){
-  clear:both;
-}
-
-.courseGoals li:nth-child(3n+1){
-  clear:none;
-}
-
-.courseGoals {
-  max-width: 85%;
-}
+  .heroImg {
+    height: 401px;
+  }
 }
