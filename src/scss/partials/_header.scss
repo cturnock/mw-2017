@@ -112,3 +112,234 @@ header{
 	display: block;
 	padding: 70px 0 0 0;
 }
+
+/*
+// Responsive Header
+//
+// --- Mixins --------------------------
+//
+
+@mixin clearfix() {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+@mixin list-reset {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+@mixin min-up($min) {
+	@media only screen and (min-width: $min) { @content; }
+}
+@mixin vertical-align($val: 47%) {
+
+	// unset
+	@if $val == 'none' {
+	    top: auto;
+      -webkit-transform: none;
+         -moz-transform: none;
+          -ms-transform: none;
+              transform: none;
+
+   	} @else {
+        position: relative;
+        top: $val;
+        -webkit-transform: translateY(-50%);
+           -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+   	}
+}
+@mixin hide-text {
+	display: block; 	// always needed
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+//
+// --- Variables --------------------------
+//
+//
+ $roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ $color-orange: #E66244;
+$nav-switch: 768px;
+
+
+//
+// --- Body Base Styles --------------------------
+//
+// *, *:before, *:after {
+// 	box-sizing: border-box;
+// }
+//
+// body {
+//   margin: 0;
+//   padding: 0;
+//   height: 100vh;
+// }
+
+//
+// --- Menu Button --------------------------
+//
+
+.menu-btn {
+	position: absolute;
+	top: 0.75rem;
+	right: 1.25rem;
+	z-index: 999;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 41px;
+	height: 36px;
+	border: none;
+	background: none;
+	outline: none;
+	cursor: pointer;
+
+  // Hidden at larger screen
+  @include min-up($nav-switch) {
+    display: none;
+  }
+
+	span {
+    @include hide-text;
+		position: relative;
+		top: 0;
+		margin: 0 auto;
+		width: 30px;
+		height: 3px;
+		background: #FFF;
+		overflow: hidden;
+		opacity: 1;
+		transition: all 0.1s ease-out;
+
+		.nav-shown & {
+			opacity: 0;
+			transform: scale(0);
+		}
+	}
+
+	&::before, &::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 30px;
+		height: 3px;
+		background: #FFF;
+		transition: all 0.1s ease-out;
+	}
+
+	&::before {
+		top: 8px;
+
+		.nav-shown & {
+			top: 18px;
+			transform: rotate(135deg);
+		}
+	}
+
+	&::after {
+		bottom: 7px;
+
+		.nav-shown & {
+			bottom: 15px;
+			transform: rotate(-135deg);
+		}
+	}
+}
+
+//
+// --- Header-Wrap --------------------------
+//
+
+// // .header-wrap {
+//   position: relative;
+//   height: 600px;
+//   background-color: $color-orange;
+//   background-image: url('http://jeremyabrahams.github.io/hero.jpg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+//
+// --- Title --------------------------
+//
+
+// .title-wrap {
+//   @include vertical-align();
+//   position: absolute;
+//   width: 100%;
+//
+//   .title-text {
+//     font-family: $roboto;
+//     font-weight: 100;
+//     font-size: 80px;
+//     color: #FFF;
+//     text-align: center;
+//   }
+// }
+
+//
+// --- Navigation --------------------------
+//
+
+.navi {
+  @include clearfix;
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.33);
+  transform: translateY(0%);
+  transition: transform 0.25s ease-out;
+
+  // JS button adds/removes this class
+  .nav-shown & {
+    transform: translateY(100%);
+  }
+
+  @include min-up($nav-switch) {
+		// this position static seems to be part of the probelm with getting me nav to line up correctly
+		position: static;
+    transform: translateY(0%) !important; // always reset on larger screens
+    transition: none; // override transition between break points
+    padding: 2rem;
+    background-color: transparent;
+  }
+}
+
+.nav-list {
+  @include clearfix;
+  @include list-reset;
+
+  @include min-up($nav-switch) {
+      float: right;
+  }
+
+  .nnav {
+    display: block;
+    margin: 2rem;
+    text-align: center;
+
+    @include min-up($nav-switch) {
+      float: left;
+      margin: 0 1rem;
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-family: $roboto;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+}
+
+*/
