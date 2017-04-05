@@ -12,6 +12,21 @@ var notify      = require('gulp-notify');
 
 var browserSync = require('browser-sync').create();
 
+var uglify      = require ('gulp-uglify');
+
+// Javascript Task
+gulp.task('scripts', function() {
+    return gulp.src('src/javascript/*.js')
+        .pipe(uglify())
+        .on("error", notify.onError({
+            title: "JS Error",
+            message: "Error: <%= error.message %>"
+        }))
+        .pipe(gulp.dest('assets/js'));
+});
+
+//end Javascript Task
+
 gulp.task('sass', function() {
     return gulp.src('src/scss/style.scss')
         .pipe(plumber())
@@ -26,8 +41,9 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', ['sass', 'browser-sync'], function() {
+gulp.task('default', ['sass', 'scripts', 'browser-sync'], function() {
     gulp.watch(['src/scss/*', 'src/scss/**/*'], ['sass']);
+    gulp.watch(['src/javascript/*', 'src/javascript/**/*'], ['scripts']);
     gulp.watch('*.html').on('change', browserSync.reload);
 });
 
